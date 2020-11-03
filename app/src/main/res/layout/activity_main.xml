@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/first_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to OTP Verification"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/second_heading"
+        android:layout_margin="10dp"
+        android:layout_below="@id/first_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter mobile number linked to your bank account"
+        android:textSize="20sp"
+        />
+    <LinearLayout
+        android:id="@+id/phone_values"
+        android:layout_below="@id/second_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/indiaflag"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/code"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/number_code"
+            android:textSize="28dp"
+            />
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/phone_number"
+        android:layout_below="@id/second_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:digits="0123456789"/>
+    </LinearLayout>
+    <EditText
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/verification_code"
+        android:layout_below="@id/phone_values"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:digits="0123456789"/>
+    <Button
+        android:id="@+id/verify_button"
+        android:layout_below="@id/verification_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="VERIFY"/>
+    <Button
+        android:id="@+id/signin_button"
+        android:layout_below="@id/verify_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="SIGNIN"/>
+
+
+
+</RelativeLayout>

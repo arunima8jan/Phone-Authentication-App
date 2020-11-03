@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Phone Authentication</string>
+    <string name="number_code"><u>+91</u></string>
+</resources>
